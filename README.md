@@ -1,6 +1,8 @@
 # Edward-Boguslavsky.github.io
 
-This is my personal website I've built over the span of 5 years as a way top get my name out there. The website will soon be replaced with my React.js ePortfolio
+This is my personal website I've built over the span of 5 years as a way to get my name out there. Currently, it is hosted on Github Pages and is using a domain name from GoDaddy. The website will soon be replaced with my React.js ePortfolio
+
+You can visit the website by heading over to [edwardboguslavsky.ca](http://www.edwardboguslavsky.ca)
 
 ## Screenshots
 
@@ -14,4 +16,4 @@ This is my personal website I've built over the span of 5 years as a way top get
 
 ### Mobile Version & Dark Mode
 
-![Dark mode screenshot](https://github.com/Edward-Boguslavsky/Edward-Boguslavsky.github.io/blob/main/images/README/dark_mode_page.png?raw=true)
+![Dark mode screenshot](https://github.com/Edward-Boguslavsky/Edward-Boguslavsky.github.io/blob/main/images/README/dark_mode.png?raw=true)
