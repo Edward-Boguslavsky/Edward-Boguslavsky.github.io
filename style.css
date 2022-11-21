@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&display=swap');
+@import "colours.css";
+
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--cool-gray-900);
+}
+
+.light1 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 0;
+    width: 20%;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--violet-600);
+    animation: fade 5s ease-in-out 0s infinite alternate;
+}
+
+.light2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 0;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--blue-500);
+    animation: fade 5s ease-in-out 1s infinite alternate;
+}
+
+.light3 {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 30%;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--light-blue-300);
+    animation: fade 5s ease-in-out 2.5s infinite alternate;
+}
+
+.light4 {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    height: 20%;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--teal-200);
+    animation: fade 5s ease-in-out 0.5s infinite alternate;
+}
+
+.light5 {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    height: 0;
+    width: 20%;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--lime-300);
+    animation: fade 5s ease-in-out 2s infinite alternate;
+}
+
+.light6 {
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    height: 0;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--amber-300);
+    animation: fade 5s ease-in-out 1.5s infinite alternate;
+}
+
+.light7 {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    height: 0;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--orange-300);
+    animation: fade 5s ease-in-out 3.5s infinite alternate;
+}
+
+.light8 {
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    height: 40%;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--red-400);
+    animation: fade 5s ease-in-out 4.5s infinite alternate;
+}
+
+.light9 {
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    height: 0;
+    width: 0;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--rose-300);
+    animation: fade 5s ease-in-out 4s infinite alternate;
+}
+
+.light10 {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    height: 0;
+    width: 10%;
+    border-radius: 999px;
+    box-shadow: 0 0 2000px 200px var(--pink-400);
+    animation: fade 5s ease-in-out 3s infinite alternate;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, h2 {
+    color: var(--cool-gray-300);
+    text-align: center;
+}
