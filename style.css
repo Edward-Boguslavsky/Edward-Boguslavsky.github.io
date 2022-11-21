@@ -3,7 +3,7 @@
 
 @keyframes fade {
   from { opacity: 1; }
-  to { opacity: 0.3; }
+  to { opacity: 0.2; }
 }
 
 * {
@@ -35,7 +35,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--blue-500);
-    animation: fade 5s ease-in-out -1s infinite alternate;
+    animation: fade 5s ease-in-out -2s infinite alternate;
 }
 
 .light3 {
@@ -46,7 +46,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--light-blue-300);
-    animation: fade 5s ease-in-out -2.5s infinite alternate;
+    animation: fade 5s ease-in-out -5s infinite alternate;
 }
 
 .light4 {
@@ -57,7 +57,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--teal-200);
-    animation: fade 5s ease-in-out -0.5s infinite alternate;
+    animation: fade 5s ease-in-out -1s infinite alternate;
 }
 
 .light5 {
@@ -68,7 +68,7 @@ body {
     width: 20%;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--lime-300);
-    animation: fade 5s ease-in-out -2s infinite alternate;
+    animation: fade 5s ease-in-out -4s infinite alternate;
 }
 
 .light6 {
@@ -79,7 +79,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--amber-300);
-    animation: fade 5s ease-in-out -4.5s infinite alternate;
+    animation: fade 5s ease-in-out -9s infinite alternate;
 }
 
 .light7 {
@@ -90,7 +90,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--orange-300);
-    animation: fade 5s ease-in-out -3.5s infinite alternate;
+    animation: fade 5s ease-in-out -7s infinite alternate;
 }
 
 .light8 {
@@ -101,7 +101,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--red-400);
-    animation: fade 5s ease-in-out -1.5s infinite alternate;
+    animation: fade 5s ease-in-out -3s infinite alternate;
 }
 
 .light9 {
@@ -112,7 +112,7 @@ body {
     width: 0;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--rose-300);
-    animation: fade 5s ease-in-out -4s infinite alternate;
+    animation: fade 5s ease-in-out -8s infinite alternate;
 }
 
 .light10 {
@@ -123,7 +123,7 @@ body {
     width: 10%;
     border-radius: 999px;
     box-shadow: 0 0 2000px 200px var(--pink-400);
-    animation: fade 5s ease-in-out -3s infinite alternate;
+    animation: fade 5s ease-in-out -6s infinite alternate;
 }
 
 main {
