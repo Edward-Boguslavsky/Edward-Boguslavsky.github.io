@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
 @import "colours.css";
 
 @keyframes fade {
@@ -127,19 +128,24 @@ body {
 }
 
 main {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto;
-    column-gap: 4vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 72vh;
-    width: 80vh;
     transform: translate(-50%, -50%);
 }
 
-.tile {
-    background: var(--gray-900);
-    border-radius: 999px;
+h1 {
+    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    color: var(--cool-gray-100);
+}
+
+h2 {
+    text-align: right;
+    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--cool-gray-300);
 }
