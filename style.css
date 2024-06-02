@@ -154,12 +154,8 @@ h1 {
     line-height: 175px;
     word-spacing: 100%;
     text-align: center;
-
     background: linear-gradient(to right, var(--cool-gray-300), var(--cool-gray-100), var(--cool-gray-300));
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
+
 }
 
 h2 {
@@ -167,12 +163,7 @@ h2 {
     font-size: 50px;
     font-weight: 700;
     text-align: right;
-
     background: linear-gradient(to right, var(--light-blue-800), var(--light-blue-600), var(--light-blue-800));
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 h2:first-of-type {
@@ -182,4 +173,9 @@ h2:first-of-type {
 h1, h2 {
     font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
     user-select: none;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 }
