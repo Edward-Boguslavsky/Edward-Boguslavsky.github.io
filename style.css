@@ -143,19 +143,17 @@ main {
     left: 50%;
     height: 100vh;
     transform: translate(-50%, -50%);
-    z-index: -1;
     border-radius: 35%;
+    z-index: -1;
 }
 
 h1 {
     padding: 25px 0 25px 0;
-    text-align: center;
-    word-spacing: 100%;
-    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
     font-size: 200px;
     font-weight: 700;
     line-height: 175px;
-    z-index: 999;
+    word-spacing: 100%;
+    text-align: center;
 
     background: linear-gradient(to right, var(--cool-gray-300), var(--cool-gray-100), var(--cool-gray-300));
     background-clip: text;
@@ -166,11 +164,9 @@ h1 {
 
 h2 {
     margin: -25px 0 -25px 0;
-    text-align: right;
-    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
     font-size: 50px;
     font-weight: 700;
-    color: var(--light-blue-700);
+    text-align: right;
 
     background: linear-gradient(to right, var(--light-blue-800), var(--light-blue-600), var(--light-blue-800));
     background-clip: text;
@@ -181,4 +177,9 @@ h2 {
 
 h2:first-of-type {
     text-align: left;
+}
+
+h1, h2 {
+    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
+    user-select: none;
 }
