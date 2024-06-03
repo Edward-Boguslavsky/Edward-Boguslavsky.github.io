@@ -3,8 +3,13 @@
 @import "colours.css";
 
 @keyframes fade {
-  from { opacity: 1; }
-  to { opacity: 0.2; }
+    from { opacity: 1; }
+    to { opacity: 0.2; }
+}
+
+@keyframes translate-circle {
+    from { transform: translate(20px, -20px); }
+    to { transform: translate(-20px, 20px); }
 }
 
 * {
@@ -131,20 +136,19 @@ body {
 */
 
 main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.avatar {
+.title {
+    display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 100vh;
+    max-width: 1000px;
     transform: translate(-50%, -50%);
-    border-radius: 35%;
-    z-index: -1;
 }
 
 h1 {
@@ -178,4 +182,39 @@ h1, h2 {
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+img {
+    user-select: none;
+}
+
+.avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    border-radius: 35%;
+    z-index: -2;
+}
+
+.waves {
+    position: absolute;
+    height: 50vh;
+    z-index: -1;
+    animation: translate-circle 5s ease-in-out infinite alternate;
+}
+
+.waves.left {
+    top: -20px;
+    left: -20px;
+}
+
+.waves.right {
+    bottom: -20px;
+    right: -20px;
+}
+
+.waves:nth-of-type(3), .waves:nth-of-type(5) {
+    animation: translate-circle 5s ease-in-out infinite alternate-reverse;
 }
