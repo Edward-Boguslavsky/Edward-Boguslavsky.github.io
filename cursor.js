@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    const defaultX = $(window).width() * 0.5, defaultY = $(window).height() * 0.85;
     const cursor = $('.cursor');
     const speed = 0.1;
 
+    let defaultX = $(window).width() * 0.5, defaultY = $(window).height() * 0.85;
     let targetX = defaultX, targetY = defaultY;
     let posX = defaultX, posY = defaultY;
     let scale = 2;
@@ -13,10 +13,19 @@ $(document).ready(function() {
         scale = 1;
     });
     
-    $(document).on("mouseleave resize", function(event) {
+    $(document).on("mouseleave", function() {
         targetX = defaultX;
         targetY = defaultY;
         scale = 2;
+    });
+
+    $(window).on("resize", function() {
+        defaultX = $(window).width() * 0.5;
+        defaultY = $(window).height() * 0.85;
+        targetX = defaultX;
+        targetY = defaultY;
+        posX = defaultX;
+        posY = defaultY;
     });
 
     function calcPosXY() {
