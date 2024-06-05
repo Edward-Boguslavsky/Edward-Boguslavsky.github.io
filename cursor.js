@@ -2,7 +2,7 @@ $(document).ready(function() {
     const cursor = $('.cursor');
     const speed = 0.1;
 
-    let defaultX = $(window).width() * 0.5, defaultY = $(window).height() * 0.85;
+    let defaultX = $(window).width() * 0.5, defaultY = $(window).height() * 0.8;
     let targetX = defaultX, targetY = defaultY;
     let posX = defaultX, posY = defaultY;
     let scale = 2;
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
     $(window).on("resize", function() {
         defaultX = $(window).width() * 0.5;
-        defaultY = $(window).height() * 0.85;
+        defaultY = $(window).height() * 0.8;
         targetX = defaultX;
         targetY = defaultY;
         posX = defaultX;
