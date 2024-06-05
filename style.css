@@ -124,8 +124,14 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+
   h2 {
     font-size: min(6vw, 4vh) !important;
     text-align: center !important;
   }
+
+  .avatar {
+    height: 80vh !important;
+  }
+  
 }
