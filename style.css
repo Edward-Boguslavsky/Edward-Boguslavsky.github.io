@@ -84,7 +84,7 @@ h1, h2 {
 
     background-clip: text;
     -webkit-background-clip: text;
-    text-fill-color: transparent;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
@@ -125,13 +125,19 @@ img {
 
 @media only screen and (max-width: 600px) {
 
+h1 {
+    padding-bottom: 36px;
+    font-size: min(19vw, 19vh);
+    line-height: min(17vw, 17vh);
+}
+
   h2 {
-    font-size: min(6vw, 4vh) !important;
+    font-size: min(8vw, 6vh) !important;
     text-align: center !important;
   }
 
   .avatar {
     height: 80vh !important;
   }
-  
+
 }
