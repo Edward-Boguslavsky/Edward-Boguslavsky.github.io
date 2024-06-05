@@ -43,7 +43,7 @@ main {
     pointer-events: none;
     z-index: 999;
 
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 1s ease, color 0.3s ease;
 }
 
 .title {
@@ -119,7 +119,7 @@ img {
     right: -20px;
 }
 
-.wave:nth-of-type(3), .wave:nth-of-type(5) {
+.wave:nth-child(1), .wave:nth-child(3) {
     animation: translate-circle 5s ease-in-out infinite alternate-reverse;
 }
 

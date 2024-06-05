@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     // Create a sparkle
     function createSparkle() {
-        const sparkle = $('<img src="graphics/sparkle.svg" class="sparkle">');
+        const sparkle = $('<img src="graphics/sparkle.svg" alt="Sparkle" class="sparkle">');
         $('.sparkles').append(sparkle);
         return sparkle;
     }
