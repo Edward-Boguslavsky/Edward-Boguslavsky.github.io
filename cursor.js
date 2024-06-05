@@ -1,4 +1,9 @@
-$(document).ready(function() {
+document.addEventListener('DOMContentLoaded', function() {
+    // Don't do anything if on mobile
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        return;
+    }
+
     const cursor = $('.cursor');
     const speed = 0.1;
 
