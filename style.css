@@ -28,12 +28,12 @@ main {
 .cursor {
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
-    padding: 12px 24px 12px 24px;
+    padding: 1vh 2vh 1vh 2vh;
     background-color: var(--cool-gray-300);
-    border-radius: 999px;
+    border-radius: 999vh;
     box-shadow: 2px 2px 4px 4px rgba(31, 41, 55, 0.2), 3px 3px 16px 16px rgba(31, 41, 55, 0.2);
     font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
-    font-size: 25px;
+    font-size: 2vh;
     color: var(--cool-gray-800);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -45,20 +45,20 @@ main {
 }
 
 .title {
-    display: inline-block;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
-    max-width: 1000px;
+    width: min-content;
+    height: min-content;
     transform: translate(-50%, -50%);
 }
 
 h1 {
-    padding: 25px 0 25px 0;
-    font-size: 200px;
+    padding: 25px;
+    font-size: min(15vw, 15vh);
     font-weight: 700;
-    line-height: 175px;
-    word-spacing: 100%;
+    line-height: min(13vw, 13vh);
+    word-spacing: 100vw;
     text-align: center;
     background: linear-gradient(to right, var(--cool-gray-300), var(--cool-gray-100), var(--cool-gray-300));
 
@@ -66,7 +66,7 @@ h1 {
 
 h2 {
     margin: -25px 0 -25px 0;
-    font-size: 50px;
+    font-size: min(4vw, 4vh);
     font-weight: 700;
     text-align: right;
     background: linear-gradient(to right, var(--light-blue-800), var(--light-blue-600), var(--light-blue-800));
