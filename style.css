@@ -27,9 +27,9 @@ main {
 
 .cursor {
     position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2);
     padding: 1vh 2vh 1vh 2vh;
     background-color: var(--cool-gray-300);
     border-radius: 999vh;
