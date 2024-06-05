@@ -40,7 +40,6 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     user-select: none;
-    pointer-events: none;
     z-index: 999;
 
     transition: transform 0.3s ease, background-color 1s ease, color 0.3s ease;
