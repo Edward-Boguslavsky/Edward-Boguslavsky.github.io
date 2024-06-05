@@ -27,6 +27,8 @@ main {
 
 .cursor {
     position: absolute;
+    top: 50%;
+    left: 80%;
     transform: translate(-50%, -50%) scale(1);
     padding: 1vh 2vh 1vh 2vh;
     background-color: var(--cool-gray-300);
