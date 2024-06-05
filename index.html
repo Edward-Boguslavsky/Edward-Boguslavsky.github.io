@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="cursor.js"></script>
+        <script src="sparkle.js"></script>
     </head>
     <body>
         <main>
@@ -20,12 +21,32 @@
 
             <img src="graphics/avatar.svg" alt="Avatar" class="avatar" />
 
-            <img src="graphics/wave-02.svg" alt="Wave 2" class="waves left" />
-            <img src="graphics/wave-01.svg" alt="Wave 1" class="waves left" />
-            <img src="graphics/wave-04.svg" alt="Wave 4" class="waves right" />
-            <img src="graphics/wave-03.svg" alt="Wave 3" class="waves right" />
+            <div class="waves">
+                <img
+                    src="graphics/wave-02.svg"
+                    alt="Wave 2"
+                    class="wave left"
+                />
+                <img
+                    src="graphics/wave-01.svg"
+                    alt="Wave 1"
+                    class="wave left"
+                />
+                <img
+                    src="graphics/wave-04.svg"
+                    alt="Wave 4"
+                    class="wave right"
+                />
+                <img
+                    src="graphics/wave-03.svg"
+                    alt="Wave 3"
+                    class="wave right"
+                />
+            </div>
 
             <div class="cursor">Explore</div>
+
+            <div class="sparkles"></div>
         </main>
     </body>
 </html>

@@ -12,18 +12,21 @@ document.addEventListener('DOMContentLoaded', function() {
     let posX = defaultX, posY = defaultY;
     let scale = 2;
 
+    // Set the target to the cursor when the cursor moves
     $(document).on("mousemove", function(event) {
         targetX = event.pageX;
         targetY = event.pageY;
         scale = 1;
     });
     
+    // Set the target to the default when the cursor leaves
     $(document).on("mouseleave", function() {
         targetX = defaultX;
         targetY = defaultY;
         scale = 2;
     });
 
+    // Recalculate the default when the window is resized
     $(window).on("resize", function() {
         defaultX = $(window).width() * 0.5;
         defaultY = $(window).height() * 0.8;
@@ -33,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         posY = defaultY;
     });
 
-    function calcPosXY() {
+    // Move the cursor towards the target
+    function positionCursor() {
         posX += (targetX - posX) * speed;
         posY += (targetY - posY) * speed;
 
@@ -43,8 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transform: 'translate(-50%, -50%) scale(' + scale + ')'
         });
 
-        requestAnimationFrame(calcPosXY);
+        requestAnimationFrame(positionCursor);
     }
 
-    calcPosXY();
+    positionCursor();
 });
