@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let scale = 2;
     let animationFrame;
 
+    // Removes styles previously set properties
+    cursor.removeAttr('style');
+
     if (!isMobile) {
         // Set the target to the cursor when the cursor moves
         $(document).on("mousemove", function(event) {
@@ -56,11 +59,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function transitionCursor() {
         cancelAnimationFrame(animationFrame);
 
-        const size = Math.max($(window).width(), $(window).height()) * 3;
+        const size = Math.max($(window).width(), $(window).height());
 
         cursor.animate({
-            width: size + 'px',
-            height: size + 'px'
+            width: size * 3 + 'px',
+            height: size * 3 + 'px',
+            fontSize: size + 'px'
         }, 1000, 'swing');
 
         cursor.css({

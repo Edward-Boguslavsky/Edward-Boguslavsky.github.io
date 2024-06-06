@@ -26,19 +26,23 @@ main {
 }
 
 .cursor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 80%;
     left: 50%;
+    width: min(12vw, 12vh);
+    height: min(4vw, 4vh);
     transform: translate(-50%, -50%) scale(2);
-    padding: 1vh 2vh 1vh 2vh;
     background-color: var(--cool-gray-300);
     border-radius: 999vh;
     box-shadow: 2px 2px 4px 4px rgba(31, 41, 55, 0.2), 3px 3px 16px 16px rgba(31, 41, 55, 0.2);
     font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
-    font-size: 2vh;
+    font-size: min(2vw, 2vh);
     color: var(--cool-gray-800);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: min(0.1vw, 0.1vh);
     user-select: none;
     z-index: 999;
 
