@@ -46,6 +46,7 @@ main {
     user-select: none;
     z-index: 999;
 
+    will-change: width, height, font-size, background-color, color;
     transition: transform 0.3s ease, background-color 1s ease, color 0.3s ease;
 }
 

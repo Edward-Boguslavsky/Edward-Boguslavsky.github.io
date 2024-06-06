@@ -2,6 +2,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Reload the page on back button press
     $(window).on('pageshow', function(event) {
         if (event.originalEvent.persisted) {
             window.location.reload();
