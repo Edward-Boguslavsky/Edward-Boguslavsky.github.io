@@ -12,6 +12,7 @@ $(document).ready(function() {
     // Randomly position the sparkly while avoiding the title
     function positionSparkle(sparkle) {
         let x, y;
+        let scale = Math.random() * 1 + 0.5;
         let sparkleSize = sparkle.height();
 
         do {
@@ -19,7 +20,7 @@ $(document).ready(function() {
             y = Math.random() * (window.innerHeight - sparkleSize);
         } while (x + sparkleSize > titleRect.left && x < titleRect.right && y + sparkleSize > titleRect.top && y < titleRect.bottom);
 
-        sparkle.css({ left: x + 'px', top: y + 'px' });
+        sparkle.css({ left: x + 'px', top: y + 'px', transform: 'scale(' + scale + ')' });
     }
 
     // Randomly show and hide the sparkle recursively

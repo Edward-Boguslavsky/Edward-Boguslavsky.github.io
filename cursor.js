@@ -1,6 +1,13 @@
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    $(window).on('pageshow', function(event) {
+        if (event.originalEvent.persisted) {
+            window.location.reload();
+        }
+    });
+
     const cursor = $('.cursor');
     const speed = 0.1;
 
@@ -9,9 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let posX = defaultX, posY = defaultY;
     let scale = 2;
     let animationFrame;
-
-    // Removes styles previously set properties
-    cursor.removeAttr('style');
 
     if (!isMobile) {
         // Set the target to the cursor when the cursor moves

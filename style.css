@@ -135,6 +135,13 @@ img {
 
 @media only screen and (max-width: 600px) {
 
+    .cursor {
+        width: min(24vw, 24vh);
+        height: min(8vw, 8vh);
+        font-size: min(4vw, 4vh);
+        letter-spacing: min(0.2vw, 0.2vh);
+    }
+
     h1 {
         padding-bottom: 36px;
         font-size: min(19vw, 19vh);
