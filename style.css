@@ -67,7 +67,11 @@ h1 {
     word-spacing: 100vw;
     text-align: center;
     background: linear-gradient(to right, var(--cool-gray-300), var(--cool-gray-100), var(--cool-gray-300));
+}
 
+h1::after {
+    content: '_';
+    opacity: var(--underscore-opacity, 1);
 }
 
 h2 {
@@ -75,6 +79,8 @@ h2 {
     font-size: min(4vw, 4vh);
     font-weight: 700;
     text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
     background: linear-gradient(to right, var(--light-blue-800), var(--light-blue-600), var(--light-blue-800));
 }
 
