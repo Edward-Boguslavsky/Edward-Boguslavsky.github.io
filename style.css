@@ -42,8 +42,63 @@ body {
     background-color: rgb(5, 5, 5);
 }
 
-.title {
+.ascii {
     white-space: pre;
+}
+
+.ascii.border {
+    display: inline-block;
+    padding: 0.5em;
+    border: 1px solid var(--true-gray-400);
+}
+
+.ascii > a {
+    color: var(--rose-600);
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    margin: 2em 0 1em 2em;
+}
+
+nav > a {
+    display: inline-block;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+nav > a:hover,
+nav > a.active {
+    background-color: var(--true-gray-100);
+    color: var(--true-gray-900);
+}
+
+section {
+    display: none;
+    min-height: 8em;
+    width: 100%;
+    margin-left: 2em;
+}
+
+section.active {
+    display: inline-block;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 0.5em;
+    background-color: rgb(5, 5, 5);
+    border: 1px solid var(--true-gray-400);
+    white-space: pre;
+}
+
+.tooltip > span {
+    padding-right: 0.5em;
+    vertical-align: bottom;
+    font-size: 1em;
+    font-variation-settings: 'FILL' 1;
+    color: var(--rose-600)
 }
 
 @media only screen and (max-width: 600px) {
