@@ -35,11 +35,62 @@
     font-weight: 700;
     line-height: 1.2;
     color: var(--true-gray-100);
+    user-select: none;
+}
+
+html, body {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    padding: 16px;
+    max-width: 100%;
+    padding: 1lh;
     background-color: rgb(5, 5, 5);
+    overflow-x: hidden;
+}
+
+.highlight {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 1lh;
+    background-color: var(--true-gray-900);
+    pointer-events: none;
+    z-index: -999;
+}
+
+.scrollbar {
+    position: fixed;
+    top: 1lh;
+    bottom: 1lh;
+    right: 1lh;
+    width: 1ch;
+    border-top: 2px solid var(--true-gray-400);
+    border-bottom: 2px solid var(--true-gray-400);
+    z-index: 999;
+}
+
+.scrollbar::before {
+    content: '';
+    position: fixed;
+    top: 1lh;
+    bottom: 1lh;
+    right: calc(1lh + 0.5ch - 1px);
+    border-right: 2px solid var(--true-gray-400);
+    z-index: -999;
+}
+
+.scrollbar > span {
+    position: absolute;
+    transform: translate(0, -50%);
+    color: var(--rose-600);
 }
 
 .ascii {
@@ -48,8 +99,8 @@ body {
 
 .ascii.border {
     display: inline-block;
-    margin: 0.5em 0;
-    padding: 0.5em 0.5ch;
+    margin: 0.5lh 0;
+    padding: 0.5lh 0.5ch;
     border: 2px solid var(--true-gray-400);
 }
 
@@ -60,7 +111,7 @@ body {
 
 nav {
     display: flex;
-    margin: 2em 0 1em 4ch;
+    margin: 2lh 0 1lh 4ch;
 }
 
 nav > a {
@@ -77,7 +128,7 @@ nav > a.active {
 
 section {
     display: none;
-    min-height: 8em;
+    min-height: 8lh;
     width: 100%;
     margin-left: 8ch;
 }
@@ -88,7 +139,7 @@ section.active {
 
 .tooltip {
     position: absolute;
-    padding: 0.5em 0.5ch;
+    padding: 0.5lh 0.5ch;
     background-color: rgb(5, 5, 5);
     border: 2px solid var(--true-gray-400);
     white-space: pre;
@@ -98,7 +149,7 @@ section.active {
 .tooltip > .material-symbols-outlined {
     padding-right: 0.5ch;
     vertical-align: bottom;
-    font-size: 1em;
+    font-size: 1lh;
     font-variation-settings: 'FILL' 1;
     color: var(--rose-600)
 }
