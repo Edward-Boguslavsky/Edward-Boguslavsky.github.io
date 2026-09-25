@@ -1,167 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
-@import "colours.css";
+@import "resources/colours.css";
 
-@keyframes translate-circle {
-    from { transform: translate(20px, -20px); }
-    to { transform: translate(-20px, 20px); }
+
+@font-face {
+    font-family: 'Terminal';
+    src: url('resources/fonts/PPFraktionMono-Regular.otf') format('opentype');
+    font-weight: 400; /* or normal */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Terminal';
+    src: url('resources/fonts/PPFraktionMono-RegularItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Terminal';
+    src: url('resources/fonts/PPFraktionMono-Bold.otf') format('opentype');
+    font-weight: 700; /* or bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Terminal';
+    src: url('resources/fonts/PPFraktionMono-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-family: 'Terminal', 'Monaco', monospace;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--true-gray-100);
 }
 
 body {
-    background-color: var(--true-gray-900);
-}
-
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    cursor: none;
-}
-
-.cursor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    width: min(12vw, 12vh);
-    height: min(4vw, 4vh);
-    transform: translate(-50%, -50%) scale(2);
-    background-color: var(--cool-gray-300);
-    border-radius: 999vh;
-    box-shadow: 2px 2px 4px 4px rgba(31, 41, 55, 0.2), 3px 3px 16px 16px rgba(31, 41, 55, 0.2);
-    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
-    font-size: min(2vw, 2vh);
-    color: var(--cool-gray-800);
-    text-transform: uppercase;
-    letter-spacing: min(0.1vw, 0.1vh);
-    user-select: none;
-    z-index: 999;
-
-    will-change: width, height, font-size, background-color, color;
-    transition: transform 0.3s ease, background-color 1s ease, color 0.3s ease;
+    padding: 16px;
+    background-color: rgb(5, 5, 5);
 }
 
 .title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    width: min-content;
-    height: min-content;
-    transform: translate(-50%, -50%);
-}
-
-h1 {
-    padding: 25px;
-    font-size: min(15vw, 15vh);
-    font-weight: 700;
-    line-height: min(13vw, 13vh);
-    word-spacing: 100vw;
-    text-align: center;
-    background: linear-gradient(to right, var(--cool-gray-300), var(--cool-gray-100), var(--cool-gray-300));
-}
-
-h1::after {
-    content: '_';
-    opacity: var(--underscore-opacity, 1);
-}
-
-h2 {
-    margin: -25px 0 -25px 0;
-    font-size: min(4vw, 4vh);
-    font-weight: 700;
-    text-align: right;
-    white-space: nowrap;
-    overflow: hidden;
-    background: linear-gradient(to right, var(--light-blue-800), var(--light-blue-600), var(--light-blue-800));
-}
-
-h2:first-of-type {
-    text-align: left;
-}
-
-h1, h2 {
-    font-family: 'Sometype Mono', 'Segoe UI', sans-serif;
-    user-select: none;
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-}
-
-img {
-    user-select: none;
-}
-
-.avatar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100vh;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: -2;
-}
-
-.wave {
-    position: absolute;
-    height: min(65vw, 50vh);
-    z-index: -1;
-    animation: translate-circle 5s ease-in-out infinite alternate;
-}
-
-.wave.left {
-    top: -20px;
-    left: -20px;
-}
-
-.wave.right {
-    bottom: -20px;
-    right: -20px;
-}
-
-.wave:nth-child(1), .wave:nth-child(3) {
-    animation: translate-circle 5s ease-in-out infinite alternate-reverse;
-}
-
-.sparkle {
-    position: absolute;
-    height: min(3vw, 3vh);
-    pointer-events: none;
-    z-index: -3;
+    white-space: pre;
 }
 
 @media only screen and (max-width: 600px) {
 
-    .cursor {
-        width: min(24vw, 24vh);
-        height: min(8vw, 8vh);
-        font-size: min(4vw, 4vh);
-        letter-spacing: min(0.2vw, 0.2vh);
-    }
 
-    h1 {
-        padding-bottom: 36px;
-        font-size: min(19vw, 19vh);
-        line-height: min(17vw, 17vh);
-    }
-
-    h2 {
-        font-size: min(8vw, 6vh) !important;
-        text-align: center !important;
-    }
-
-    .avatar {
-        height: 80vh !important;
-    }
 
 }
