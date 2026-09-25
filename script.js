@@ -1,3 +1,32 @@
+$(document).ready(function() {
+    var $follower = $('.tooltip');
+    var gap = 0
+    var date = new Date();
+    
+    $follower.hide();
+  
+    $('.ascii > a').on({
+      mouseenter: function() {
+        $follower.show();
+        date = new Date();
+      },
+      mouseleave: function() {
+        $follower.hide();
+      },
+      mousemove: function(e) {
+        $follower.css({
+          left: e.pageX - $follower.outerWidth() - gap,
+          top: e.pageY - $follower.outerHeight() - gap
+        });
+      }
+    });
+
+
+    $(".tooltip > .time").each(function() {
+        $(this).text(date.getHours() + ":" + ('0' + date.getMinutes()).slice(-2));
+    });
+  });
+
 $(function () {
     const $sections = $("section");
     const $navItems = $("nav a");

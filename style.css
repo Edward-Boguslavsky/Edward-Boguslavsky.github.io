@@ -48,8 +48,9 @@ body {
 
 .ascii.border {
     display: inline-block;
-    padding: 0.5em;
-    border: 1px solid var(--true-gray-400);
+    margin: 0.5em 0;
+    padding: 0.5em 0.5ch;
+    border: 2px solid var(--true-gray-400);
 }
 
 .ascii > a {
@@ -59,12 +60,12 @@ body {
 
 nav {
     display: flex;
-    margin: 2em 0 1em 2em;
+    margin: 2em 0 1em 4ch;
 }
 
 nav > a {
     display: inline-block;
-    padding: 0.5em;
+    padding: 0 1ch;
     cursor: pointer;
 }
 
@@ -78,7 +79,7 @@ section {
     display: none;
     min-height: 8em;
     width: 100%;
-    margin-left: 2em;
+    margin-left: 8ch;
 }
 
 section.active {
@@ -87,14 +88,15 @@ section.active {
 
 .tooltip {
     position: absolute;
-    padding: 0.5em;
+    padding: 0.5em 0.5ch;
     background-color: rgb(5, 5, 5);
-    border: 1px solid var(--true-gray-400);
+    border: 2px solid var(--true-gray-400);
     white-space: pre;
+    pointer-events: none;
 }
 
-.tooltip > span {
-    padding-right: 0.5em;
+.tooltip > .material-symbols-outlined {
+    padding-right: 0.5ch;
     vertical-align: bottom;
     font-size: 1em;
     font-variation-settings: 'FILL' 1;
